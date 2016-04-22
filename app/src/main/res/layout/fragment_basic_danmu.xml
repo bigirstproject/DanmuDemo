@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/danmu_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00ffffff"
+    android:orientation="vertical">
+
+    <opengl.DanmukuTextureView
+        android:id="@+id/fragment_danmu"
+        android:layout_width="match_parent"
+        android:layout_height="120dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:text="速度"
+            android:textColor="#ffffffff"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/edit_text"
+            android:layout_width="200dip"
+            android:layout_height="wrap_content"
+            android:numeric="integer"
+            android:singleLine="true"
+            android:text="80"
+            android:textColor="#ffffffff" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="确定"
+            android:textColor="#ffffffff" />
+
+    </LinearLayout>
+
+</LinearLayout>
